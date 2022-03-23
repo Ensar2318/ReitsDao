@@ -1,3 +1,141 @@
-body{
-    color: black;
+@font-face {
+  font-family: avenirHeavy;
+  src: url(../Fonts/Avenir-Heavy/Avenir-Heavy.ttf);
 }
+
+@font-face {
+  font-family: ndAstrooner;
+  src: url(../Fonts/Nd-Astroneer/Nd-Astroneer.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.btn {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn:active, .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header nav {
+  padding: 20px 106px;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  .header nav {
+    padding: 20px 60px;
+  }
+}
+
+.header .my-navbar-brand {
+  max-width: 150px;
+}
+
+.header .mydropdown-menu {
+  background: #02264a;
+  width: 100%;
+  min-width: 5rem;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  left: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.header .nav-item {
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .header .nav-item {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .header .nav-item {
+    margin: 0;
+  }
+}
+
+.header .nav-item .nav-link {
+  color: #02264a;
+  padding: 6px 1rem;
+  border-radius: 8px;
+}
+
+.header .nav-item .nav-link:hover, .header .nav-item .nav-link:focus {
+  color: white;
+  background-color: #02264a;
+}
+
+.header .nav-item .active {
+  background-color: #02264a;
+  color: white !important;
+  border-radius: 8px;
+}
+
+.header .btn-outline-contact {
+  border-color: #fd6c21;
+  color: #fd6c21;
+  display: block;
+  padding: 0.375rem 1.3rem;
+}
+
+.header .btn-outline-contact:hover {
+  color: #ffffff;
+  background-color: #fd6c21;
+}
+
+.header .btn-outline-contact:active {
+  opacity: 0.85;
+}
+
+.sectionOne {
+  background-color: #02264a;
+}
+
+.sectionOne .section-one-side-left {
+  padding: 1rem 0;
+}
+
+.sectionOne .section-one-side-left h1 {
+  color: #ffffff;
+  font-family: ndAstrooner;
+  font-weight: normal;
+  width: 50%;
+  font-size: 50px;
+}
+
+.sectionOne .section-one-side-left a {
+  color: #ffffff;
+  font-family: avenirHeavy;
+  font-style: normal;
+  background-color: #fd6c21;
+  font-size: 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px 80px;
+  display: inline-block;
+  margin-top: 40px;
+  font-weight: 300;
+}
+/*# sourceMappingURL=main.css.map */
