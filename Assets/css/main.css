@@ -15,10 +15,6 @@
           box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 section {
   padding: 60px 0;
 }
@@ -111,6 +107,23 @@ section {
 
 .sectionOne {
   background-color: #02264a;
+  position: relative;
+  z-index: 1;
+}
+
+.sectionOne::before {
+  background: -webkit-gradient(linear, left top, right top, from(#02264a), color-stop(8%, rgba(2, 38, 74, 0.548)), color-stop(26%, rgba(2, 38, 74, 0.594275)), color-stop(50%, rgba(2, 38, 74, 0.8)), color-stop(75%, rgba(2, 38, 74, 0.759541)), to(rgba(2, 38, 74, 0.499037))), url(../img/test.svg);
+  background: linear-gradient(90deg, #02264a 0%, rgba(2, 38, 74, 0.548) 8%, rgba(2, 38, 74, 0.594275) 26%, rgba(2, 38, 74, 0.8) 50%, rgba(2, 38, 74, 0.759541) 75%, rgba(2, 38, 74, 0.499037) 100%), url(../img/test.svg);
+  background-repeat: repeat;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
 }
 
 .sectionOne .section-one-side-left {
@@ -121,8 +134,8 @@ section {
   color: #ffffff;
   font-family: ndAstrooner;
   font-weight: normal;
-  width: 50%;
-  font-size: 50px;
+  width: 75%;
+  font-size: 65px;
 }
 
 .sectionOne .section-one-side-left a {
@@ -133,9 +146,286 @@ section {
   font-size: 22px;
   border-radius: 10px;
   text-decoration: none;
-  padding: 10px 80px;
+  padding: 18px 0;
+  text-align: center;
+  width: 70%;
   display: inline-block;
   margin-top: 40px;
   font-weight: 300;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.sectionOne .section-one-side-left a:hover {
+  opacity: 0.85;
+}
+
+.sectionTwo {
+  background-color: #ffffff;
+  background-image: url(../img/Section-two-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.sectionTwo .section-two-left h1 {
+  color: #02264a;
+  font-size: 65px;
+  font-family: ndAstrooner;
+}
+
+.sectionTwo .section-two-left p {
+  color: #02264a;
+  font-size: 24px;
+  font-family: ndAstrooner;
+  line-height: 1.3;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sectionTwo .section-two-right p {
+  margin-top: 40px;
+  color: #6e7b88;
+  font-size: 17px;
+  width: 80%;
+  text-align: start;
+}
+
+.section-thre {
+  background-color: #02264a;
+  background-image: url(../img/Section-thre-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.section-thre .customer h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: ndAstrooner;
+  font-size: 65px;
+}
+
+.section-thre .customer p {
+  color: #ffffff;
+  padding: 0 6px;
+  margin: 0;
+  font-family: ndAstrooner;
+  display: inline-block;
+  font-size: 24px;
+}
+
+.section-thre .customer img {
+  padding: 0 40px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .section-thre .customer img {
+    padding: 0;
+  }
+}
+
+.section-thre .content {
+  margin-top: 60px;
+}
+
+.section-thre .content p {
+  font-size: 18px;
+  color: #7da3c7;
+}
+
+.sectionFour {
+  color: #ffffff;
+}
+
+.sectionFour h2 {
+  color: #a4b9ce;
+  font-size: 34px;
+  font-family: ndAstrooner;
+}
+
+.sectionFour h1 {
+  color: #02264a;
+  font-size: 65px;
+  font-family: ndAstrooner;
+}
+
+.sectionFour h3 {
+  color: #02264a;
+  font-size: 28px;
+  font-family: ndAstrooner;
+}
+
+.sectionFour .photo-item {
+  margin-top: 200px;
+}
+
+@media screen and (max-width: 960px) {
+  .sectionFour .photo-item {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .sectionFour .photo-item img {
+    width: 50%;
+  }
+}
+
+.sectionFour .vs {
+  text-align: center;
+  font-size: 70px;
+  letter-spacing: 12px;
+}
+
+.sectionFour .section-four-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sectionFour .section-four-right img {
+  width: 70%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: auto;
+}
+
+.sectionFour .section-four-right p {
+  margin-top: 100px;
+  color: #6e7b88;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.sectionFive {
+  background-color: #02264a;
+}
+
+.sectionFive h2 {
+  color: #ffffff;
+  font-size: 34px;
+  font-family: ndAstrooner;
+}
+
+.sectionFive h1 {
+  color: #ffffff;
+  font-size: 65px;
+  font-family: ndAstrooner;
+}
+
+.sectionFive p {
+  color: #6e7b88;
+  font-size: 22px;
+  font-family: ndAstrooner;
+}
+
+.sectionSix {
+  background-color: #ffffff;
+}
+
+.sectionSix .bgorange {
+  background-color: #ffe7bf;
+}
+
+.sectionSix .bggreen {
+  background-color: #eafdff;
+}
+
+.sectionSix .bgblue {
+  background-color: #eaf3ff;
+}
+
+.sectionSix .main-card {
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.sectionSix .main-card .card-head {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.sectionSix .main-card .card-head img {
+  width: 35%;
+}
+
+.sectionSix .main-card .card-body {
+  background-color: #ffffff;
+  padding: 34px 0;
+}
+
+.sectionSix .main-card .card-body h2 {
+  text-align: center;
+  color: #02264a;
+  font-size: 34px;
+  font-family: ndAstrooner;
+}
+
+.sectionEight {
+  background-color: #001a34;
+}
+
+.sectionEight .padding {
+  padding: 0 100px;
+}
+
+.sectionEight .title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 65px;
+  font-family: ndAstrooner;
+}
+
+.sectionEight .estate-body {
+  background-color: #02264a;
+  border-radius: 26px;
+  padding: 80px 80px;
+}
+
+.sectionEight .estate-body h2 {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: ndAstrooner;
+  text-transform: uppercase;
+}
+
+.sectionEight .estate-body p {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: ndAstrooner;
+}
+
+.sectionEight .estate-body h4 {
+  color: #8193a5;
+  font-family: ndAstrooner;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.sectionEight .estate-body .my-title {
+  list-style: none;
+}
+
+.sectionEight .estate-body .my-title li {
+  color: #8193a5;
+  font-family: ndAstrooner;
+  font-size: 20px;
+}
+
+.sectionEight .estate-body .my-content {
+  list-style: none;
+}
+
+.sectionEight .estate-body .my-content li {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: ndAstrooner;
 }
 /*# sourceMappingURL=main.css.map */
