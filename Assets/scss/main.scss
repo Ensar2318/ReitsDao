@@ -1,19 +1,19 @@
 // Media Query Sizes
-$small:540px;
-$medium:720px;
-$large:960px;
-$xlarge:1140px;
-$xxlarge:1320px;
+$small: 540px;
+$medium: 720px;
+$large: 960px;
+$xlarge: 1140px;
+$xxlarge: 1320px;
 // ColorS Variables!!
-$color-orange:#fd6c21;
-$color-darkblue:#02264a;
-$color-rgba-darkblue:rgb(2, 38, 74);
-$color-white:#ffffff;
-$color-darkbluesoft:#7da3c7;
-$color-light-white:#6e7b88;
-$color-cremeyellow:#ffe7bf;
-$color-cremeGreen:#eafdff;
-$color-cremeBlue:#eaf3ff;
+$color-orange: #fd6c21;
+$color-darkblue: #02264a;
+$color-rgba-darkblue: rgb(2, 38, 74);
+$color-white: #ffffff;
+$color-darkbluesoft: #7da3c7;
+$color-light-white: #6e7b88;
+$color-cremeyellow: #ffe7bf;
+$color-cremeGreen: #eafdff;
+$color-cremeBlue: #eaf3ff;
 // Fonts Variables
 @font-face {
     font-family: avenirHeavy;
@@ -32,10 +32,9 @@ $color-cremeBlue:#eaf3ff;
     box-sizing: border-box;
 }
 
-html {
-    // scroll-behavior: smooth;
-}
-
+// html {
+//     scroll-behavior: smooth;
+// }
 section {
     padding: 60px 0;
 }
@@ -119,7 +118,7 @@ section {
     // background-repeat: repeat;
     &::before {
         // background-image: url(../img/test.svg);
-        background: linear-gradient(90deg, rgb(2, 38, 74) 0%, rgba(2, 38, 74, 0.548) 8%, rgba(2, 38, 74, 0.5942752100840336) 26%, rgba(2, 38, 74, 0.8) 50%, rgba(2, 38, 74, 0.7595413165266106) 75%, rgba(2, 38, 74, 0.4990371148459384) 100%), url(../img/test.svg);
+        background: linear-gradient( 90deg, rgb(2, 38, 74) 0%, rgba(2, 38, 74, 0.548) 8%, rgba(2, 38, 74, 0.5942752100840336) 26%, rgba(2, 38, 74, 0.8) 50%, rgba(2, 38, 74, 0.7595413165266106) 75%, rgba(2, 38, 74, 0.4990371148459384) 100%), url(../img/test.svg);
         background-repeat: repeat;
         content: "";
         display: block;
@@ -163,7 +162,7 @@ section {
 }
 
 // Sectin One End
-// ======= Section Two ======= 
+// ======= Section Two =======
 .sectionTwo {
     background-color: $color-white;
     background-image: url(../img/Section-two-bg.png);
@@ -196,7 +195,7 @@ section {
 }
 
 // Section Two END
-//  ======= Section thre ======= 
+//  ======= Section thre =======
 .section-thre {
     background-color: $color-darkblue;
     background-image: url(../img/Section-thre-bg.png);
@@ -360,17 +359,34 @@ section {
     .estate-body {
         background-color: $color-darkblue;
         border-radius: 26px;
-        padding: 80px 80px;
+        margin-bottom: 49px;
+        .side-left {
+            @media screen and (max-width: 1800px) {
+                padding: 40px 80px;
+            }
+            @media screen and (max-width: $medium) {
+                padding: 20px 80px 0px 80px;
+            }
+            padding: 80px 80px;
+        }
+        .side-right {
+            @media screen and (max-width: ($xxlarge+40)) {
+                padding: 40px;
+            }
+            padding: 30px 40px 30px 0px;
+        }
         h2 {
             color: $color-white;
             font-size: 50px;
             font-family: ndAstrooner;
             text-transform: uppercase;
+            margin-bottom: 40px;
         }
         p {
             color: $color-white;
             font-size: 24px;
             font-family: ndAstrooner;
+            margin-bottom: 40px;
         }
         h4 {
             color: #8193a5;
@@ -378,23 +394,104 @@ section {
             text-transform: uppercase;
             font-size: 28px;
         }
-        .my-title {
-            list-style: none;
-            li {
-                color: #8193a5;
-                font-family: ndAstrooner;
-                font-size: 20px;
-            }
+        h6 {
+            color: #8193a5;
+            font-family: ndAstrooner;
+            font-size: 20px;
+            padding-right: 2rem;
         }
-        .my-content {
-            list-style: none;
-            li {
-                color: $color-white;
-                font-size: 20px;
-                font-family: ndAstrooner;
-            }
+        td {
+            color: $color-white;
+            font-size: 20px;
+            font-family: ndAstrooner;
         }
     }
 }
 
 // <!-- Section eight End -->
+// ======== Section contact =======
+.contact {
+    padding: 100px 0;
+    background-color: $color-darkblue;
+    background-image: url(../img/contact-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    h1 {
+        color: $color-white;
+        font-size: 65px;
+        font-family: ndAstrooner;
+    }
+    form {
+        @media screen and (max-width: ($xlarge)) {
+            padding: 0 10px;
+        }
+        padding: 0 100px;
+        .form-control {
+            border-radius: 12px;
+        }
+        .form-column {
+            margin-bottom: 30px;
+        }
+        textarea {
+            resize: none;
+        }
+        input,
+        textarea {
+            color: #f0f0f0;
+            border: solid 3px rgba(240, 240, 240, 0.137);
+            background: none;
+            padding: 20px 20px;
+            font-size: 22px;
+            &:focus,
+            &:active {
+                background: none;
+                color: rgba(255, 255, 255, 0.6);
+                box-shadow: none;
+                outline: none;
+                border: solid 3px rgba(240, 240, 240, 0.466);
+            }
+            &::placeholder {
+                color: #f0f0f0;
+                opacity: 0.27;
+                font-family: ndAstrooner;
+                font-size: 22px;
+            }
+        }
+        button {
+            background-color: #29527b;
+            color: $color-white;
+            font-size: 22px;
+            font-family: ndAstrooner;
+            border-radius: 12px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: #29527bab;
+                color: white;
+            }
+        }
+    }
+}
+
+// Section content end
+// ============ Footer START ============
+footer {
+    background-color: #011a34;
+    padding: 80px 0;
+    img {
+        width: 310px;
+    }
+    h3 {
+        font-size: 25px;
+        font-family: ndAstrooner;
+        color: $color-white;
+        margin-bottom: 20px;
+    }
+    h4 {
+        font-size: 16px;
+        font-family: ndAstrooner;
+        color: $color-white;
+        margin-bottom: 20px;
+    }
+}
+
+// Footer END

@@ -386,33 +386,7 @@ section {
 .sectionEight .estate-body {
   background-color: #02264a;
   border-radius: 26px;
-  margin-bottom: 49px;
-}
-
-.sectionEight .estate-body .side-left {
   padding: 80px 80px;
-}
-
-@media screen and (max-width: 1800px) {
-  .sectionEight .estate-body .side-left {
-    padding: 40px 80px;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .sectionEight .estate-body .side-left {
-    padding: 20px 80px 0px 80px;
-  }
-}
-
-.sectionEight .estate-body .side-right {
-  padding: 30px 40px 30px 0px;
-}
-
-@media screen and (max-width: 1360px) {
-  .sectionEight .estate-body .side-right {
-    padding: 40px;
-  }
 }
 
 .sectionEight .estate-body h2 {
@@ -420,14 +394,12 @@ section {
   font-size: 50px;
   font-family: ndAstrooner;
   text-transform: uppercase;
-  margin-bottom: 40px;
 }
 
 .sectionEight .estate-body p {
   color: #ffffff;
   font-size: 24px;
   font-family: ndAstrooner;
-  margin-bottom: 40px;
 }
 
 .sectionEight .estate-body h4 {
@@ -441,138 +413,15 @@ section {
   color: #8193a5;
   font-family: ndAstrooner;
   font-size: 20px;
-  padding-right: 2rem;
 }
 
-.sectionEight .estate-body td {
+.sectionEight .estate-body .my-content {
+  list-style: none;
+}
+
+.sectionEight .estate-body .my-content li {
   color: #ffffff;
   font-size: 20px;
   font-family: ndAstrooner;
-}
-
-.contact {
-  padding: 100px 0;
-  background-color: #02264a;
-  background-image: url(../img/contact-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.contact h1 {
-  color: #ffffff;
-  font-size: 65px;
-  font-family: ndAstrooner;
-}
-
-.contact form {
-  padding: 0 100px;
-}
-
-@media screen and (max-width: 1140px) {
-  .contact form {
-    padding: 0 10px;
-  }
-}
-
-.contact form .form-control {
-  border-radius: 12px;
-}
-
-.contact form .form-column {
-  margin-bottom: 30px;
-}
-
-.contact form textarea {
-  resize: none;
-}
-
-.contact form input,
-.contact form textarea {
-  color: #f0f0f0;
-  border: solid 3px rgba(240, 240, 240, 0.137);
-  background: none;
-  padding: 20px 20px;
-  font-size: 22px;
-}
-
-.contact form input:focus, .contact form input:active,
-.contact form textarea:focus,
-.contact form textarea:active {
-  background: none;
-  color: rgba(255, 255, 255, 0.6);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
-  border: solid 3px rgba(240, 240, 240, 0.466);
-}
-
-.contact form input::-webkit-input-placeholder,
-.contact form textarea::-webkit-input-placeholder {
-  color: #f0f0f0;
-  opacity: 0.27;
-  font-family: ndAstrooner;
-  font-size: 22px;
-}
-
-.contact form input:-ms-input-placeholder,
-.contact form textarea:-ms-input-placeholder {
-  color: #f0f0f0;
-  opacity: 0.27;
-  font-family: ndAstrooner;
-  font-size: 22px;
-}
-
-.contact form input::-ms-input-placeholder,
-.contact form textarea::-ms-input-placeholder {
-  color: #f0f0f0;
-  opacity: 0.27;
-  font-family: ndAstrooner;
-  font-size: 22px;
-}
-
-.contact form input::placeholder,
-.contact form textarea::placeholder {
-  color: #f0f0f0;
-  opacity: 0.27;
-  font-family: ndAstrooner;
-  font-size: 22px;
-}
-
-.contact form button {
-  background-color: #29527b;
-  color: #ffffff;
-  font-size: 22px;
-  font-family: ndAstrooner;
-  border-radius: 12px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact form button:hover {
-  background-color: #29527bab;
-  color: white;
-}
-
-footer {
-  background-color: #011a34;
-  padding: 80px 0;
-}
-
-footer img {
-  width: 310px;
-}
-
-footer h3 {
-  font-size: 25px;
-  font-family: ndAstrooner;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-footer h4 {
-  font-size: 16px;
-  font-family: ndAstrooner;
-  color: #ffffff;
-  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
