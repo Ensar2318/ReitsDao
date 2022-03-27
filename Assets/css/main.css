@@ -32,6 +32,7 @@ section {
 .header nav {
   padding: 20px 106px;
   background-color: #ffffff;
+  z-index: 2;
 }
 
 @media screen and (max-width: 900px) {
@@ -42,18 +43,6 @@ section {
 
 .header .my-navbar-brand {
   max-width: 150px;
-}
-
-.header .mydropdown-menu {
-  background: #02264a;
-  width: 100%;
-  min-width: 5rem;
-  position: absolute;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  left: 0;
-  list-style: none;
-  padding: 0;
 }
 
 .header .nav-item {
@@ -72,10 +61,57 @@ section {
   }
 }
 
+.header .nav-item:hover,
+.header .nav-item:focus .dropdown-content {
+  display: block;
+}
+
+.header .nav-item .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #02264a;
+  width: 100%;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 38px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-bottom: 10px;
+  padding: 0 10px 10px 10px;
+}
+
+.header .nav-item .dropdown-content hr {
+  color: #1d4872;
+}
+
+.header .nav-item .dropdown-content a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: ndAstrooner;
+  border-radius: 8px;
+}
+
+.header .nav-item .dropdown-content a:hover {
+  background-color: #4e6d8b;
+}
+
 .header .nav-item .nav-link {
   color: #02264a;
-  padding: 6px 1rem;
+  padding: 6px 1.8rem;
   border-radius: 8px;
+  font-family: ndAstrooner;
+  font-size: 22px;
 }
 
 .header .nav-item .nav-link:hover, .header .nav-item .nav-link:focus {
@@ -376,6 +412,18 @@ section {
   padding: 0 100px;
 }
 
+@media screen and (max-width: 700px) {
+  .sectionEight .padding {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sectionEight .padding {
+    padding: 0 10px;
+  }
+}
+
 .sectionEight .title {
   text-align: center;
   color: #ffffff;
@@ -574,5 +622,79 @@ footer h4 {
   font-family: ndAstrooner;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+footer .social-medias {
+  margin-top: 25px;
+}
+
+footer .social-medias .first {
+  padding: 0 10px 0 0;
+}
+
+@media screen and (max-width: 2500px) {
+  footer .social-medias .first {
+    padding: 0 2px 0 0;
+  }
+}
+
+footer .social-medias a {
+  padding: 0 10px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1250px) {
+  footer .social-medias a {
+    padding: 0 2px;
+  }
+}
+
+footer .social-medias a:hover {
+  opacity: 0.8;
+}
+
+footer .social-medias a svg {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (min-width: 2400px) {
+  footer .footer-bilgiler {
+    padding: 0 9rem;
+  }
+}
+
+@media screen and (max-width: 2500px) {
+  footer .footer-bilgiler {
+    padding: 0 7rem;
+  }
+}
+
+@media screen and (max-width: 2200px) {
+  footer .footer-bilgiler {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  footer .footer-bilgiler {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 1820px) {
+  footer .footer-bilgiler {
+    padding: 0;
+  }
+}
+
+footer .footer-bilgiler h6 {
+  padding: 0 10px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: ndAstrooner;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

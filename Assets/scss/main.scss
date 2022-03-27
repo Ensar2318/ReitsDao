@@ -52,22 +52,13 @@ section {
     nav {
         padding: 20px 106px;
         background-color: $color-white;
+        z-index: 2;
         @media screen and (max-width: 900px) {
             padding: 20px 60px;
         }
     }
     .my-navbar-brand {
         max-width: 150px;
-    }
-    .mydropdown-menu {
-        background: $color-darkblue;
-        width: 100%;
-        min-width: 5rem;
-        position: absolute;
-        transition: all 0.5s ease;
-        left: 0;
-        list-style: none;
-        padding: 0;
     }
     .nav-item {
         @media screen and (max-width: 1300px) {
@@ -77,10 +68,46 @@ section {
             margin: 0;
         }
         margin: 0 2rem;
+        &:hover,
+        &:focus .dropdown-content {
+            display: block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: $color-darkblue;
+            width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 38px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding-bottom: 10px;
+            padding: 0 10px 10px 10px;
+            hr {
+                color: #1d4872;
+            }
+            a {
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                text-align: center;
+                padding: 0.4rem 1rem;
+                color: $color-white;
+                font-size: 22px;
+                font-family: ndAstrooner;
+                border-radius: 8px;
+                &:hover {
+                    background-color: #4e6d8b;
+                }
+            }
+        }
         .nav-link {
             color: $color-darkblue;
-            padding: 6px 1rem;
+            padding: 6px 1.8rem;
             border-radius: 8px;
+            font-family: ndAstrooner;
+            font-size: 22px;
             &:hover,
             &:focus {
                 color: white;
@@ -348,6 +375,12 @@ section {
 .sectionEight {
     background-color: #001a34;
     .padding {
+        @media screen and (max-width: 700px) {
+            padding: 0 60px;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 0 10px;
+        }
         padding: 0 100px;
     }
     .title {
@@ -491,6 +524,54 @@ footer {
         font-family: ndAstrooner;
         color: $color-white;
         margin-bottom: 20px;
+    }
+    .social-medias {
+        margin-top: 25px;
+        .first {
+            @media screen and (max-width: (2500px)) {
+                padding: 0 2px 0 0;
+            }
+            padding: 0 10px 0 0;
+        }
+        a {
+            @media screen and (max-width: (1250px)) {
+                padding: 0 2px;
+            }
+            padding: 0 10px;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                opacity: 0.8;
+            }
+            svg {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    .footer-bilgiler {
+        @media screen and (min-width: (2400px)) {
+            padding: 0 9rem;
+        }
+        @media screen and (max-width: (2500px)) {
+            padding: 0 7rem;
+        }
+        @media screen and (max-width: (2200px)) {
+            padding: 0 5rem;
+        }
+        @media screen and (max-width: (2000px)) {
+            padding: 0 4rem;
+        }
+        @media screen and (max-width: (1820px)) {
+            padding: 0;
+        }
+        h6 {
+            padding: 0 10px;
+            font-size: 16px;
+            color: $color-white;
+            font-family: ndAstrooner;
+            margin: 0;
+        }
     }
 }
 
