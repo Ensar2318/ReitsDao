@@ -32,7 +32,7 @@
             font-size: 32px;
             font-family: ndAstrooner;
         }
-        .newsSwiper-button-next{
+        .newsSwiper-button-next {
             width: 50px;
             height: 50px;
             background: #000;
@@ -67,8 +67,58 @@
                 right: 16px;
             }
         }
-
     }
 }
 
 // Notice Side END
+// ========== Faq Side =============
+.faq {
+    h2 {
+        color: $color-darkblue;
+        font-size: 50px;
+        font-family: ndAstrooner;
+    }
+    p {
+        font-size: 24px;
+        font-family: ndAstrooner;
+        color: $color-darkblue;
+        margin-bottom: 28px;
+    }
+    h1 {
+        color: $color-darkblue;
+        font-size: 60px;
+        font-family: ndAstrooner;
+        text-align: center;
+    }
+    .faq-tabs {
+        .tab-item {
+            overflow: hidden;
+            border: solid 2px #f0f0f0;
+            border-radius: 18px;
+            .tab-title {
+                padding: 28px;
+                h4 {
+                    color: #0a1f31;
+                    font-size: 24px;
+                    font-family: ndAstrooner;
+                    margin: 0;
+                }
+            }
+            .tab-content {
+                transition: all 0.5s ease;
+                overflow: hidden;
+                height: 0px;
+                width: 100%;
+                p {
+                    padding: 28px;
+                    color: #7c8993;
+                    font-size: 18px;
+                    font-family: ndAstrooner;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+// Faq side END

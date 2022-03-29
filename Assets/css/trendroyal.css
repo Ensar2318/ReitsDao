@@ -863,4 +863,57 @@ footer .footer-bilgiler h6 {
   top: 16px;
   right: 16px;
 }
+
+.faq h2 {
+  color: #02264a;
+  font-size: 50px;
+  font-family: ndAstrooner;
+}
+
+.faq p {
+  font-size: 24px;
+  font-family: ndAstrooner;
+  color: #02264a;
+  margin-bottom: 28px;
+}
+
+.faq h1 {
+  color: #02264a;
+  font-size: 60px;
+  font-family: ndAstrooner;
+  text-align: center;
+}
+
+.faq .faq-tabs .tab-item {
+  overflow: hidden;
+  border: solid 2px #f0f0f0;
+  border-radius: 18px;
+}
+
+.faq .faq-tabs .tab-item .tab-title {
+  padding: 28px;
+}
+
+.faq .faq-tabs .tab-item .tab-title h4 {
+  color: #0a1f31;
+  font-size: 24px;
+  font-family: ndAstrooner;
+  margin: 0;
+}
+
+.faq .faq-tabs .tab-item .tab-content {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  height: 0px;
+  width: 100%;
+}
+
+.faq .faq-tabs .tab-item .tab-content p {
+  padding: 28px;
+  color: #7c8993;
+  font-size: 18px;
+  font-family: ndAstrooner;
+  margin: 0;
+}
 /*# sourceMappingURL=trendroyal.css.map */
