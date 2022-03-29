@@ -778,4 +778,89 @@ footer .footer-bilgiler h6 {
   font-family: ndAstrooner;
   margin: 0;
 }
-/*# sourceMappingURL=main.css.map */
+
+.notice {
+  background-color: #f7f7f7;
+  padding-top: 150px;
+}
+
+.notice .notice-blue-card {
+  background-color: #dbedff;
+  border-radius: 8px;
+  padding: 65px 45px;
+}
+
+.notice .notice-blue-card h3 {
+  color: #02264a;
+  font-size: 50px;
+  font-family: ndAstrooner;
+}
+
+.notice .notice-blue-card p {
+  color: #02264a;
+  font-size: 27px;
+  font-family: ndAstrooner;
+}
+
+.notice .notice-blue-card img {
+  width: 260px;
+  margin-right: 55px;
+}
+
+@media screen and (max-width: 960px) {
+  .notice .notice-blue-card img {
+    margin: 0;
+  }
+}
+
+.notice .newsSwiper {
+  position: relative;
+}
+
+.notice .newsSwiper h4 {
+  color: #02264a;
+  font-size: 32px;
+  font-family: ndAstrooner;
+}
+
+.notice .newsSwiper .newsSwiper-button-next {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  left: 0px;
+}
+
+.notice .newsSwiper .news-card {
+  background-color: #ffffff;
+  padding: 38px;
+  border-radius: 12px;
+  margin: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}
+
+.notice .newsSwiper .news-card p {
+  color: #02264a;
+  font-size: 26px;
+  font-family: ndAstrooner;
+  line-height: 1.33;
+}
+
+.notice .newsSwiper .news-card h6 {
+  color: #acacac;
+  font-family: ndAstrooner;
+  font-size: 16px;
+  margin: 0;
+}
+
+.notice .newsSwiper .news-card img {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+/*# sourceMappingURL=trendroyal.css.map */
