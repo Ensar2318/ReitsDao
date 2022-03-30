@@ -41,3 +41,22 @@ var swiper = new Swiper(".newsSwiper", {
     }
 });
 //estate Info spiner js
+
+//Estate Info FAQ TAB BAR START
+
+$(".faq-tabs .tab-item").each(function(index, element) {
+    // element == this
+    $(element).click(function(e) {
+        e.preventDefault();
+        // $(".tab-content").removeClass("active");
+        $(this).find(".tab-content").toggleClass("active");
+        $(this).find(".tab-title").toggleClass("active-head");
+        $(this).find(".tab-title h4").toggleClass("active");
+        $(this).find(".tab-title .arrow").toggleClass("active-arrow");
+        $(this).toggleClass("bg-shadow");
+        
+        
+    });
+});
+
+//Estate Info FAQ TAB BAR END

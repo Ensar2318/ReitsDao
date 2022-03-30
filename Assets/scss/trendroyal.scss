@@ -91,12 +91,104 @@
         text-align: center;
     }
     .faq-tabs {
+        .bg-shadow{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+        }
         .tab-item {
             overflow: hidden;
             border: solid 2px #f0f0f0;
             border-radius: 18px;
+            position: relative;
+            margin-bottom: 12px;
+            .active {
+                max-height: 200px !important;
+            }
+            .active-head {
+                background-color: #f5fbff;
+            }
+            .active-arrow {
+                transform: rotate(180deg) !important;
+                &:before,
+                &:after {
+                    content: "";
+                    background: #326691 !important;
+                }
+            }
+            .arrow {
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                top: 40%;
+                right: 30px;
+                transition: transform 0.3s ease;
+                transform: rotate(0deg);
+                &:before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                    background: #abbbd9;
+                    border-radius: 0.5rem;
+                    display: block;
+                }
+                &.left,
+                &.right {
+                    width: 24px;
+                    &:before {
+                        top: 55%;
+                    }
+                    &:after {
+                        bottom: 55%;
+                    }
+                    &:before,
+                    &:after {
+                        left: -5%;
+                        height: 25%;
+                        width: 110%;
+                    }
+                }
+                &.up,
+                &.down {
+                    height: 22px;
+                    &:before {
+                        left: 85%;
+                    }
+                    &:after {
+                        right: 95%;
+                    }
+                    &:before,
+                    &:after {
+                        top: -5%;
+                        height: 110%;
+                        width: 30%;
+                    }
+                }
+                &.up {
+                    &:before,
+                    &:after {
+                        transform: rotate(-45deg);
+                    }
+                    &:after {
+                        transform: rotate(45deg);
+                    }
+                }
+                &.down {
+                    &:before,
+                    &:after {
+                        transform: rotate(45deg);
+                    }
+                    &:after {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
             .tab-title {
                 padding: 28px;
+                position: relative;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+                .active {
+                    color: #326691;
+                }
                 h4 {
                     color: #0a1f31;
                     font-size: 24px;
@@ -105,12 +197,12 @@
                 }
             }
             .tab-content {
-                transition: all 0.5s ease;
+                transition: all 0.3s ease;
                 overflow: hidden;
-                height: 0px;
+                max-height: 0px;
                 width: 100%;
                 p {
-                    padding: 28px;
+                    padding: 28px 28px;
                     color: #7c8993;
                     font-size: 18px;
                     font-family: ndAstrooner;
