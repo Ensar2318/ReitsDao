@@ -48,14 +48,22 @@ $(".faq-tabs .tab-item").each(function(index, element) {
     // element == this
     $(element).click(function(e) {
         e.preventDefault();
-        // $(".tab-content").removeClass("active");
+        //$(".tab-content").removeClass("active");
+
+        if (!$(this).hasClass("bg-shadow")) {
+            $(".tab-content").removeClass("active");
+            $(".tab-title").removeClass("active-head");
+            $(".tab-title h4").removeClass("active");
+            $(".tab-title .arrow").removeClass("active-arrow");
+            $(".tab-item").removeClass("bg-shadow");
+        }
         $(this).find(".tab-content").toggleClass("active");
         $(this).find(".tab-title").toggleClass("active-head");
         $(this).find(".tab-title h4").toggleClass("active");
         $(this).find(".tab-title .arrow").toggleClass("active-arrow");
         $(this).toggleClass("bg-shadow");
-        
-        
+
+
     });
 });
 

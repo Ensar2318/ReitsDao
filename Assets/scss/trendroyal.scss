@@ -73,6 +73,7 @@
 // Notice Side END
 // ========== Faq Side =============
 .faq {
+    padding: 120px 0 !important;
     h2 {
         color: $color-darkblue;
         font-size: 50px;
@@ -91,7 +92,7 @@
         text-align: center;
     }
     .faq-tabs {
-        .bg-shadow{
+        .bg-shadow {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
         }
         .tab-item {
@@ -120,7 +121,7 @@
                 height: 14px;
                 top: 40%;
                 right: 30px;
-                transition: transform 0.3s ease;
+                transition: transform 0.5s ease;
                 transform: rotate(0deg);
                 &:before,
                 &:after {
@@ -185,7 +186,7 @@
                 padding: 28px;
                 position: relative;
                 cursor: pointer;
-                transition: all 0.2s ease-in-out;
+                transition: all 0.5s ease-in-out;
                 .active {
                     color: #326691;
                 }
@@ -197,7 +198,7 @@
                 }
             }
             .tab-content {
-                transition: all 0.3s ease;
+                transition: all 0.5s ease;
                 overflow: hidden;
                 max-height: 0px;
                 width: 100%;

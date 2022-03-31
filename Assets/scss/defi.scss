@@ -1,0 +1,64 @@
+@import "main.scss";
+// =====MetaMask Side ======
+.metamask {
+    @media screen and (max-width: 2100px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    background-color: $color-darkblue;
+    padding-top: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
+    .bosluk {
+        @media screen and (max-width: 1500px) {
+            margin-right: 0;
+        }
+        width: 180px;
+        margin-right: 110px;
+    }
+    .orange {
+        color: #fd6920 !important;
+    }
+    h6 {
+        color: #ffffff;
+        font-size: 20px;
+        font-family: ndAstrooner;
+        display: inline-block;
+        margin: 0;
+    }
+    .padding-left {
+        @media screen and (max-width: 2100px) {
+            padding-left: 80px;
+        }
+        @media screen and (max-width: 1667px) {
+            padding-left: 0px;
+        }
+        padding-left: 140px;
+    }
+    .btn-add-meta-mask {
+        margin-left: 38px;
+        border-radius: 8px;
+        padding: 10px 22px;
+        border: none;
+        color: #ffffff;
+        background-color: #fc6921;
+        font-size: 20px;
+        font-family: ndAstrooner;
+        transition: background-color 0.3s ease;
+        &:hover {
+            background-color: #fc6a21d0;
+        }
+    }
+}
+
+//meta mask side end
+//  <!-- ========= Defi Services ========= -->
+.defi-services {
+    h1 {
+        color: $color-darkblue;
+        font-size: 50px;
+        font-family: ndAstrooner;
+    }
+}
+
+//  <!-- Defi Services END-->
