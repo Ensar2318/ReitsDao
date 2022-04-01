@@ -9,6 +9,11 @@ $(document).ready(function() {
         }
     });
 
+    AOS.init({
+        duration: 2000,
+        once: true,
+      });
+
 });
 
 //navbar scroll Y to box shadow navbar
@@ -68,3 +73,14 @@ $(".faq-tabs .tab-item").each(function(index, element) {
 });
 
 //Estate Info FAQ TAB BAR END
+
+// yüzdelik rakam sayac
+let yuzde=0;
+let yuzdelikarttirmasayac =setInterval(() => {
+    yuzde++;
+    $(".yuzderakam").text(yuzde+"%");
+    if(yuzde==79){
+        clearInterval(yuzdelikarttirmasayac);
+    }
+}, 54);
+// yüzdelik rakam sayac

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: avenirHeavy;
   src: url(../Fonts/Avenir-Heavy/Avenir-Heavy.ttf);
@@ -13,6 +14,10 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 section {
@@ -777,5 +782,276 @@ footer .footer-bilgiler h6 {
   color: #ffffff;
   font-family: ndAstrooner;
   margin: 0;
+}
+
+.trendroyalproject2 {
+  padding: 150px 106px 60px 106px;
+}
+
+.trendroyalproject2 .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.trendroyalproject2 .yuzdelik {
+  padding-bottom: 67px;
+}
+
+.trendroyalproject2 .yüzdelikbarout {
+  background-color: #f4f4f4;
+  height: 17px;
+  margin-top: 10px;
+}
+
+.trendroyalproject2 .yüzdelikbarout .yuzdelikbarin {
+  height: 17px;
+  background-color: #cbe7fe;
+  width: 78%;
+  -webkit-animation: yuzdearttirma 5s normal;
+          animation: yuzdearttirma 5s normal;
+}
+
+.trendroyalproject2 .card-item {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 20px 34px;
+  height: 280px;
+  border-radius: 18px;
+}
+
+@media screen and (max-width: 950px) {
+  .trendroyalproject2 .card-item {
+    height: 240px;
+  }
+}
+
+.trendroyalproject2 .card-item h3 {
+  color: #02264a;
+  font-size: 36px;
+  font-family: ndAstrooner;
+  margin: 0;
+}
+
+.trendroyalproject2 .card-item p {
+  color: #02264a;
+  font-size: 28px;
+  font-family: ndAstrooner;
+  margin: 30px 0 0 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .trendroyalproject2 .card-item p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .trendroyalproject2 .card-item p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .trendroyalproject2 .card-item p {
+    font-size: 28px;
+  }
+}
+
+.trendroyalproject2 h3 {
+  color: #02264a;
+  font-size: 36px;
+  font-family: ndAstrooner;
+}
+
+.trendroyalproject2 h5 {
+  color: #6d8dad;
+  font-size: 24px;
+  font-family: ndAstrooner;
+}
+
+@media screen and (max-width: 1550px) {
+  .trendroyalproject2 h5 {
+    font-size: 18px;
+  }
+}
+
+.trendroyalproject2 h2 {
+  color: #02264a;
+  font-size: 80px;
+  font-family: ndAstrooner;
+}
+
+@media screen and (max-width: 1550px) {
+  .trendroyalproject2 h2 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .trendroyalproject2 h2 {
+    font-size: 40px;
+  }
+}
+
+.trendroyalproject2 h4 {
+  color: #02264a;
+  font-size: 35px;
+  font-family: ndAstrooner;
+}
+
+@media screen and (max-width: 1550px) {
+  .trendroyalproject2 h4 {
+    font-size: 25px;
+  }
+}
+
+.trendroyalproject2 h1 {
+  color: #02264a;
+  font-size: 85px;
+  font-family: ndAstrooner;
+}
+
+@media screen and (max-width: 1550px) {
+  .trendroyalproject2 h1 {
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .trendroyalproject2 h1 {
+    font-size: 45px;
+  }
+}
+
+@-webkit-keyframes yuzdearttirma {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 79%;
+  }
+}
+
+@keyframes yuzdearttirma {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 79%;
+  }
+}
+
+.investment h1 {
+  text-align: center;
+  color: #02264a;
+  font-size: 56px;
+  font-family: ndAstrooner;
+  margin-bottom: 80px;
+}
+
+.investment .invest-contents h3 {
+  color: #02264a;
+  font-size: 32px;
+  font-family: ndAstrooner;
+}
+
+.investment .invest-contents hr {
+  border-top: solid 1px #e5e5e5;
+}
+
+.investment .invest-contents h4 {
+  color: #02264a;
+  font-size: 22px;
+  font-family: ndAstrooner;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.investment .invest-contents h5 {
+  color: #6d8dad;
+  font-size: 18px;
+  font-family: ndAstrooner;
+  margin: 0;
+}
+
+.contract-side {
+  background-color: #f5faff;
+}
+
+.contract-side .documant .contract {
+  color: #02264a;
+  font-size: 32px;
+  font-family: ndAstrooner;
+  margin: 0;
+}
+
+.contract-side .contents div {
+  width: 180px;
+  height: 130px;
+  border: solid 1px #e4effa;
+  margin: 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contract-side .contents div h4 {
+  color: #02264a;
+  font-size: 22px;
+  font-family: ndAstrooner;
+  text-align: center;
+  margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.reliable h1 {
+  color: #02264a;
+  font-size: 52px;
+  font-family: ndAstrooner;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.reliable .main-card {
+  background-color: #fafafa;
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.reliable .main-card .card-head {
+  text-align: center;
+  padding: 60px 0;
+  height: 250px;
+}
+
+.reliable .main-card .card-head img {
+  width: 35%;
+}
+
+.reliable .main-card .card-body {
+  background-color: #ffffff;
+  padding: 34px;
+  height: 250px;
+}
+
+.reliable .main-card .card-body h2 {
+  color: #02264a;
+  font-size: 30px;
+  font-family: ndAstrooner;
+}
+
+.reliable .main-card .card-body p {
+  color: #02264a;
+  font-size: 20px;
+  font-family: ndAstrooner;
+}
+
+.noticefoto {
+  padding: 0;
+  background-color: #02264a;
 }
 /*# sourceMappingURL=notice.css.map */
