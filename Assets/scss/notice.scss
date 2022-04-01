@@ -25,6 +25,9 @@
         @media screen and (max-width: 950px) {
             height: 240px;
         }
+        @media screen and (max-width: 600px) {
+            overflow: auto;
+        }
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
         padding: 20px 34px;
         height: 280px;
@@ -43,7 +46,7 @@
                 font-size: 18px;
             }
             @media screen and (max-width: 950px) {
-                font-size: 28px;
+                font-size: 22px;
             }
             color: $color-darkblue;
             font-size: 28px;

@@ -825,6 +825,12 @@ footer .footer-bilgiler h6 {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .trendroyalproject2 .card-item {
+    overflow: auto;
+  }
+}
+
 .trendroyalproject2 .card-item h3 {
   color: #02264a;
   font-size: 36px;
@@ -853,7 +859,7 @@ footer .footer-bilgiler h6 {
 
 @media screen and (max-width: 950px) {
   .trendroyalproject2 .card-item p {
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 
