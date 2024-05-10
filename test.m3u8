@@ -1,5 +1,12 @@
 #EXTM3U
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1344624,RESOLUTION=1280x720,FRAME-RATE=24.000,CODECS="avc1.64001f,mp4a.40.2"
-https://ensarvod.duckdns.org/pal/Get3/?v=https://paris.cdn77.host/hls2/01/00024/3s8ucozrwiqs_n/index-v1-a1.m3u8$t=huiKRiLwniUmYl6w4nY8d70-kv0QOlaIUehqubNDOjA*s=1715373891*e=43200*f=124937*srv=x1*i=0.0*sp=5000*fr=3s8ucozrwiqs*p1=paris*p2=paris
 
-#EXT-X-I-FRAME-STREAM-INF:BANDWIDTH=75407,RESOLUTION=1280x720,CODECS="avc1.64001f",URI="https://ensarvod.duckdns.org/pal/Get3/?v=https://paris.cdn77.host/hls2/01/00024/3s8ucozrwiqs_n/iframes-v1-a1.m3u8$t=huiKRiLwniUmYl6w4nY8d70-kv0QOlaIUehqubNDOjA*s=1715373891*e=43200*f=124937*srv=x1*i=0.0*sp=5000*fr=3s8ucozrwiqs*p1=paris*p2=paris"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio0",NAME="English",LANGUAGE="en",AUTOSELECT=NO,DEFAULT=NO,CHANNELS="2",URI="https://poznan.cdn77.host/hls2/01/00018/32cyaorun4lv_n/index-a1.m3u8?t=1Mz9vH-fVvjXhM5vmFiVmH4W8AhBK-RmxfCVs1oGZTE&s=1715379542&e=43200&f=94235&srv=x2&i=0.0&sp=5000&p1=poznan&p2=poznan"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio0",NAME="Türkçe",LANGUAGE="tr",AUTOSELECT=YES,DEFAULT=YES,CHANNELS="2",URI="https://poznan.cdn77.host/hls2/01/00018/32cyaorun4lv_n/index-a2.m3u8?t=1Mz9vH-fVvjXhM5vmFiVmH4W8AhBK-RmxfCVs1oGZTE&s=1715379542&e=43200&f=94235&srv=x2&i=0.0&sp=5000&p1=poznan&p2=poznan"
+
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1595931,RESOLUTION=1280x720,FRAME-RATE=23.974,CODECS="avc1.64001f,mp4a.40.2",VIDEO-RANGE=SDR,AUDIO="audio0"
+https://poznan.cdn77.host/hls2/01/00018/32cyaorun4lv_n/index-v1-a1.m3u8?t=1Mz9vH-fVvjXhM5vmFiVmH4W8AhBK-RmxfCVs1oGZTE&s=1715379542&e=43200&f=94235&srv=x2&i=0.0&sp=5000&p1=poznan&p2=poznan
+
+#EXT-X-I-FRAME-STREAM-INF:BANDWIDTH=181985,RESOLUTION=1280x720,CODECS="avc1.64001f",URI="https://poznan.cdn77.host/hls2/01/00018/32cyaorun4lv_n/iframes-v1-a1.m3u8?t=1Mz9vH-fVvjXhM5vmFiVmH4W8AhBK-RmxfCVs1oGZTE&s=1715379542&e=43200&f=94235&srv=x2&i=0.0&sp=5000&p1=poznan&p2=poznan",VIDEO-RANGE=SDR
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,URI="https://asds.tech/play/altyazi.m3u8?idx=embed-32cyaorun4lv.html&vtt=en",GROUP-ID="text_A",NAME="ENGLISH",AUTOSELECT=YES
+#EXT-X-MEDIA:TYPE=SUBTITLES,URI="https://asds.tech/play/altyazi.m3u8?idx=embed-32cyaorun4lv.html&vtt=tr",GROUP-ID="text_B",NAME="TURKISH",AUTOSELECT=YES
